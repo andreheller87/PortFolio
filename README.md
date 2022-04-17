@@ -1,2 +1,2 @@
-# projetoPrimeiroSite
- Site feito no curso
+# projeto-site
+ Projeto de site durante o curso de git-hub
