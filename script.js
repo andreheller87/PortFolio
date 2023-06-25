@@ -10,6 +10,7 @@
 
 function exibirCurriculo() {
     window.open('https://github.com/andreheller87/PortFolio/blob/main/Curriculo.pdf', '_blank');
+ 
 }
 
 function exibirHardSkills() {
