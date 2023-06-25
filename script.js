@@ -7,3 +7,25 @@ function abrirmenu(){
         BarraMenuAberto.style.width = "0px";
     }
 }
+
+function exibirCurriculo() {
+    window.open('curriculo.pdf', '_blank');
+  }
+
+  function exibirHardSkills() {
+    var elementoHardSkills = document.getElementById("HardSkill");
+    elementoHardSkills.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function exibirGitLink() {
+    var elementoHardSkills = document.getElementById("gitlink");
+    elementoHardSkills.scrollIntoView({ behavior: 'smooth' });
+  }
+
+  function whats() {
+    var url = "https://whatsa.me/5547992847590";
+    window.open(url, "_blank");
+  }
+  
+
+  
