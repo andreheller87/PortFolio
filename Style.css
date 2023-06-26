@@ -27,9 +27,12 @@ header {
   left: 0;
   width: 100%;
   z-index: 100;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #ac77cd;
   }
   .title {
     font-size: 24px;
+    padding-left: 10px;
   }
   
   nav ul {
@@ -123,12 +126,36 @@ header {
     position: relative;
     justify-content: center;
     right: 12%;
-    margin-top: 50px;
+    margin-top: 80px;
+    
 }
 
-.nav-a {
+.nav-p {
     display: flex;
+    
+}
 
+.nav-baixo img{
+    width: 35px;
+    
+}
+.animacao {
+    width: 20px;
+    height: auto;
+    vertical-align: middle;
+    opacity: 1;
+    animation: troca 1s infinite alternate; 
+  }
+@keyframes troca {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5; 
+    }
+    100% {
+      opacity: 1; 
+    }
 }
 
 .main-title a {
@@ -140,10 +167,6 @@ header {
   
 }
 
-
-.main-title a:hover {
-    background-color: #ac77cd;
-}
 
 .Numeros {
     display: flex;
@@ -288,6 +311,9 @@ header {
     width: 100%;
     background-color: #222222;
     padding: 60px;
+    flex-direction: column; 
+    align-items: center;
+    text-align: center;
 }
 
 .C-projetos h1 {
@@ -295,8 +321,9 @@ header {
     font-size: 50px;
     font-family: "Inria Sans";
     font-weight: bold;
-    padding-top: 5%;
+    padding-top: 80px;
     color: #ac77cd;
+    margin-bottom: 25px;
 }
 
 .C-projetos p {
@@ -305,6 +332,7 @@ header {
     color: #fff;
     font-weight: lighter;
     margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .img-projetos {
@@ -313,6 +341,7 @@ header {
     gap: 70px;
     margin-top: 150px;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .img-projetos img {
@@ -320,6 +349,8 @@ header {
     height: auto;
     box-shadow: 4px 4px 4px #858585, 4px 4px 4px #858585;
     border-radius: 10px;
+    margin-bottom: 20px; 
+    margin-left: -225px;
 }
 
 .img-2 img {
@@ -329,6 +360,8 @@ header {
     margin-top: 35px;
     box-shadow: 4px 4px 4px #858585, 4px 4px 4px #858585;
     border-radius: 10px;
+    margin-bottom: 20px; 
+    margin-left: -20px;
 }
 
 
@@ -362,7 +395,7 @@ header {
 .C-rodapé {
     width: 100%;
     background-color: #383535;
-    padding: 50px;
+    padding: 30px;
     color: #fff;
 
 }
@@ -373,19 +406,20 @@ header {
     font-family: "Inria Sans";
     font-weight: lighter;
     margin-bottom: 20px;
-    cursor: pointer;
+    
 }
 
-.whats{
+.link-footer{
     width: 35px;
     height: 35px;
     cursor: pointer;
+    margin-right: 20px;
 }
 
 .C-rodapé form input:first-child {
     display: inline-block;
     width: 100%;
-    padding: 14px 50px 14px 15px;
+    padding: 14px 40px 14px 15px;
     border-radius: 30px;
     outline: none;
     border: none;
