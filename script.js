@@ -24,7 +24,7 @@ function exibirGitLink() {
 }
 
 function whats() {
-    var url = "https://whatsa.me/5547992847590";
+    var url = "https://whatsa.me/5547992847590/?t=Ol%C3%A1,%20vim%20pelo%20seu%20portf%C3%B3lio,%20gostaria%20de%20me%20conectar!";
     window.open(url, "_blank");
 }
 
