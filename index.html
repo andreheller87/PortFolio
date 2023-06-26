@@ -9,44 +9,41 @@
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
-    <title>Portfolio</title>
+    <title>Portfolio.</title>
 </head>
+<header>
+    <div class="title">André Heller.</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home.</a></li>
+        <li><a href="#HardSkill">Hard Skills.</a></li>
+        <li><a href="#gitlink">Meus Projetos.</a></li>
+        <li><a class="curriculo" onclick="exibirCurriculo()">Currículo.</a></li>
+      </ul>
+    </nav>
+</header>
 
 <body>
-    <header class="Section-1-bg">
-        <aside>
-            <nav class="icon-menu" onclick="abrirmenu()">
-                <img src="menu-aberto.png">
-            </nav><!--icon-menu-->
-
-            <nav id="barra-menu">
-                <ul>
-                    <li onclick="exibirCurriculo()">Currículo</li>
-                    <li onclick="exibirHardSkills()">Hard Skills</li>
-                    <li onclick="exibirGitLink()">GitHub e Linkedin</li>
-                </ul>
-            </nav><!--barra-menu-->
-        </aside>
-
+    <section id="home" class="Section-1-bg">
+      
         <section class="main-title">
-            <h1><strong>André Heller. </strong></h1>
+            <h1>André Heller.</h1>
             <h2>Desenvolvedor. </h2>
             <h5>
                 <strong>Java, SQL, JavaScript, HTML, CSS, Python, Angular, React, IDE: VSCode, Eclipse.</strong>
             </h5>
-            <h5>Universidade Regional de Blumenau -FURB.</h5>
+            <h5>Universidade Regional de Blumenau - FURB.</h5>
             <h5>4º Semestre - Ciência Da Computação. </h5>
 
             <nav class="nav">
-                <button class="nav-buttons" onclick="exibirCurriculo()">Currículo</button>
-                <button class="nav-buttons" onclick="exibirHardSkills()">Hard Skills</button>
+                <a class="nav-a" onclick="exibirCurriculo()">V</a>
             </nav>
 
         </section><!--main-title-->
-    </header><!--Section-1-bg-->
+    </section ><!--Section-1-bg-->
 
     <section id="HardSkill" class="Container" data-aos="fade-up">
-        <h1>Hard Skills</h1>
+        <h1>Hard Skills.</h1>
 
         <section class="C-card" data-aos="fade-up">
             <section class="Card">
@@ -87,7 +84,7 @@
 
 
     <section id="gitlink" class="C-projetos" data-aos="fade-up">
-        <h1>Meu GitHub e Linkedin</h1>
+        <h1>Meus projetos.</h1>
 
         <nav class="img-2" data-aos="fade-up">
 
@@ -95,10 +92,11 @@
             </p>
 
             <a href="https://github.com/andreheller87"> <img src="printgit.png" alt="projeto"></a>
-            <p><strong>Linkedin.</strong> </p>
+          
 
         </nav><!--img-projetos-->
         <nav class="img-2">
+            <p><strong>Linkedin.</strong> </p>
             <a href="https://www.linkedin.com/in/andr%C3%A9-heller-1172a4235/"><img src="printLinkdin.png"
                     alt="projeto"></a>
         </nav>
