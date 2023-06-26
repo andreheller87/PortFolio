@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -14,18 +14,18 @@
 <header>
     <div class="title">André Heller.</div>
     <nav>
-      <ul>
-        <li><a href="#home">Home.</a></li>
-        <li><a href="#HardSkill">Hard Skills.</a></li>
-        <li><a href="#gitlink">Meus Projetos.</a></li>
-        <li><a class="curriculo" onclick="exibirCurriculo()">Currículo.</a></li>
-      </ul>
+        <ul>
+            <li><a href="#home">Home.</a></li>
+            <li><a href="#HardSkill">Hard Skills.</a></li>
+            <li><a href="#gitlink">Meus Projetos.</a></li>
+            <li><a class="curriculo" onclick="exibirCurriculo()">Currículo.</a></li>
+        </ul>
     </nav>
 </header>
 
 <body>
     <section id="home" class="Section-1-bg">
-      
+
         <section class="main-title">
             <h1>André Heller.</h1>
             <h2>Desenvolvedor. </h2>
@@ -36,11 +36,11 @@
             <h5>4º Semestre - Ciência Da Computação. </h5>
 
             <nav class="nav">
-                <a class="nav-a" onclick="exibirCurriculo()">V</a>
+                <p class="nav-baixo" ><img class="animacao" src="para-baixo.png" alt="v"></p>
             </nav>
 
         </section><!--main-title-->
-    </section ><!--Section-1-bg-->
+    </section><!--Section-1-bg-->
 
     <section id="HardSkill" class="Container" data-aos="fade-up">
         <h1>Hard Skills.</h1>
@@ -91,13 +91,13 @@
             <p><strong>Principais trabalhos e exercícios feitos nas aulas da FURB e em cursos extras.</strong>
             </p>
 
-            <a href="https://github.com/andreheller87"> <img src="printgit.png" alt="projeto"></a>
-          
+            <a href="https://github.com/andreheller87" target="_blank"> <img src="printgit.png" alt="projeto"></a>
+
 
         </nav><!--img-projetos-->
         <nav class="img-2">
             <p><strong>Linkedin.</strong> </p>
-            <a href="https://www.linkedin.com/in/andr%C3%A9-heller-1172a4235/"><img src="printLinkdin.png"
+            <a href="https://www.linkedin.com/in/andr%C3%A9-heller-1172a4235/" target="_blank"><img src="printLinkdin.png"
                     alt="projeto"></a>
         </nav>
     </section>
@@ -105,9 +105,14 @@
     <section class="C-rodapé">
 
         <form>
-            <p onclick="whats()">Entre em contato:<img class="whats" src="icons8-whatsapp-480.png" alt="Whats">
-            </p>
-            
+            <p>Entre em contato:</p>
+            <img onclick="whats()" class="link-footer" src="icons8-whatsapp-480.png" alt="Whats">
+            <a href="https://github.com/andreheller87" target="_blank"> <img class="link-footer" src="github.png" alt="projeto"></a>
+
+            <a href="https://www.linkedin.com/in/andr%C3%A9-heller-1172a4235/" target="_blank"><img class="link-footer" src="linkedin.png"
+                alt="projeto"></a>
+           
+
         </form>
 
     </section><!--C-rodapé-->
