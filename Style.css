@@ -347,13 +347,15 @@ nav ul li a:hover {
 
 }
 
-.projectOrder p {
-
+.projectOrder a{
+    
+    
     font-family: "Inria Sans";
     margin-top: 2rem;
     margin-bottom: 2rem;
     color: #ffff;
     padding-left: 2rem;
+    text-decoration: none;
 
 }
 
@@ -407,7 +409,7 @@ nav ul li a:hover {
     border-radius: 10px;
 }
 
-@media only screen and (max-width: 830px) {
+@media only screen and (max-width: 900px) {
 
     .img-projetos img {
         width: 300px;
