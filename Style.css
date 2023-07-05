@@ -235,7 +235,6 @@ header {
 .Container h1 {
     text-align: center;
     font-size: 50px;
-    
     font-family: "Inria Sans";
     font-weight: bold;
     padding-top: 12%;
@@ -315,7 +314,7 @@ header {
     padding-top: 7%;
     flex-direction: column; 
     align-items: center;
-    text-align: center;
+    
 }
 
 .C-projetos h1 {
@@ -327,14 +326,26 @@ header {
     color: #ac77cd;
     margin-bottom: 25px;
 }
-
-.C-projetos p {
-    text-align: center;
+.projectOrder{
+    width: 100%;
+}
+.projectOrder h2 {
+    
+    font-weight: bold;
     font-family: "Inria Sans";
-    color: #fff;
-    font-weight: lighter;
-    margin-top: 25px;
-    margin-bottom: 25px;
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #ac77cd;
+}
+
+.projectOrder p {
+  
+    font-family: "Inria Sans";
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #ffff;
+    padding-left: 3rem;
 }
 
 .img-projetos {
@@ -345,9 +356,13 @@ header {
     flex-wrap: wrap;
     align-items: center;
 }
+.img-2{
+    display: flex;
+    
+}
 
 .img-projetos img {
-    width: 450px;
+    width: 50%;
     height: auto;
     box-shadow: 4px 4px 4px #858585, 4px 4px 4px #858585;
     border-radius: 10px;
@@ -358,12 +373,14 @@ header {
 .img-2 img {
     width: 450px;
     height: auto;
-    margin-left: 32%;
+    
     margin-top: 35px;
     box-shadow: 4px 4px 4px #858585, 4px 4px 4px #858585;
     border-radius: 10px;
     margin-bottom: 20px; 
-    margin-left: -20px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+
 }
 
 
