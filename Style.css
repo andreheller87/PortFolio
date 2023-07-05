@@ -335,6 +335,18 @@ nav ul li a:hover {
 .projectOrder {
     width: 100%;
 }
+.projectOrder a{
+    text-decoration: none;
+}
+.projectOrder p{
+ font-family: "Inria Sans";
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: #ffff;
+    padding-left: 2rem;
+    
+
+}
 
 .projectOrder h2 {
 
@@ -347,17 +359,7 @@ nav ul li a:hover {
 
 }
 
-.projectOrder a{
-    
-    
-    font-family: "Inria Sans";
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    color: #ffff;
-    padding-left: 2rem;
-    text-decoration: none;
 
-}
 
 
 .img-projetos {
