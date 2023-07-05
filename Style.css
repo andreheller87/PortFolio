@@ -357,6 +357,7 @@ nav ul li a:hover {
 
 }
 
+
 .img-projetos {
     display: flex;
     justify-content: center;
@@ -381,6 +382,7 @@ nav ul li a:hover {
     border-radius: 10px;
     margin-bottom: 20px;
     margin-left: -225px;
+    
 }
 
 .img-2 img {
@@ -392,6 +394,7 @@ nav ul li a:hover {
     margin-bottom: 20px;
     margin-left: 5rem;
     margin-right: 5rem;
+    margin-top: 6rem;
 
 }
 
