@@ -413,6 +413,7 @@ header {
 @media only screen and (max-width: 414px) {
     .C-projetos {
         padding-top: 2%;
+        
     }
 
     .C-projetos h1 {
@@ -425,6 +426,11 @@ header {
         margin-top: 1rem;
         margin-bottom: 1rem;
         padding-left: 1rem;
+    }
+    .img-2{
+        flex-direction: column; 
+        align-items: center; 
+        flex-wrap: wrap;
     }
 
     .img-projetos {
