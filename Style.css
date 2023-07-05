@@ -17,57 +17,58 @@ body {
 }
 
 header {
-  background-color: #000;
-  color: #FFF;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 100;
-  margin-bottom: 20px;
-  border-bottom: 1px solid #ac77cd;
-  padding: 10px;
-  }
-  .title {
+    background-color: #000;
+    color: #FFF;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ac77cd;
+    padding: 10px;
+}
+
+.title {
     font-size: 24px;
     padding-left: 10px;
-  }
-  
-  nav ul {
+}
+
+nav ul {
     list-style-type: none;
     margin: 0;
-    padding:5px;
-  }
-  
-  nav ul li {
+    padding: 5px;
+}
+
+nav ul li {
     display: inline;
     margin-left: 10px;
-  }
-  
-  nav ul li a {
+}
+
+nav ul li a {
     text-decoration: none;
     color: #ffff;
     font-weight: bolder;
     padding: 5px;
     transition: color 0.3s ease;
-    
-  }
-  
-  nav ul li a:hover {
+
+}
+
+nav ul li a:hover {
     font-weight: bolder;
     background-color: #ac77cd;
     border-radius: 5px;
-  }
-  
+}
 
-  .curriculo{
+
+.curriculo {
     cursor: pointer;
-  }
-  
-  
+}
+
+
 
 /*====================Inicio====================*/
 
@@ -78,7 +79,7 @@ header {
     background-size: cover;
     height: 100vh;
     width: 100%;
-    
+
 }
 
 
@@ -127,36 +128,40 @@ header {
     position: relative;
     justify-content: center;
     right: 12%;
-    margin-top:8em;
-   
+    margin-top: 8em;
+
 }
 
 .nav-p {
     display: flex;
-  
+
 }
 
-.nav-baixo img{
+.nav-baixo img {
     width: 35px;
     max-width: 100%;
-    
+
 }
+
 .animacao {
     width: 20px;
     height: auto;
     vertical-align: middle;
     opacity: 1;
-    animation: troca 1s infinite alternate; 
-  }
+    animation: troca 1s infinite alternate;
+}
+
 @keyframes troca {
     0% {
-      opacity: 1;
+        opacity: 1;
     }
+
     50% {
-      opacity: 0.5; 
+        opacity: 0.5;
     }
+
     100% {
-      opacity: 1; 
+        opacity: 1;
     }
 }
 
@@ -166,7 +171,7 @@ header {
     font-size: 20px;
     color: #fff;
     cursor: pointer;
-  
+
 }
 
 
@@ -312,9 +317,9 @@ header {
     width: 100%;
     background-color: #222222;
     padding-top: 7%;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-    
+
 }
 
 .C-projetos h1 {
@@ -326,26 +331,30 @@ header {
     color: #ac77cd;
     margin-bottom: 25px;
 }
-.projectOrder{
+
+.projectOrder {
     width: 100%;
 }
+
 .projectOrder h2 {
-    
+
     font-weight: bold;
     font-family: "Inria Sans";
     text-align: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
     color: #ac77cd;
+
 }
 
 .projectOrder p {
-  
+
     font-family: "Inria Sans";
     margin-top: 2rem;
     margin-bottom: 2rem;
     color: #ffff;
-    padding-left: 3rem;
+    padding-left: 2rem;
+
 }
 
 .img-projetos {
@@ -356,9 +365,13 @@ header {
     flex-wrap: wrap;
     align-items: center;
 }
-.img-2{
+
+.img-2 {
     display: flex;
-    
+    border: 2px solid #ffff;
+    border-radius: 10px;
+    margin: 2rem;
+    padding: 1.5rem;
 }
 
 .img-projetos img {
@@ -366,18 +379,17 @@ header {
     height: auto;
     box-shadow: 4px 4px 4px #858585, 4px 4px 4px #858585;
     border-radius: 10px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     margin-left: -225px;
 }
 
 .img-2 img {
-    width: 450px;
+    width: 30rem;
     height: auto;
-    
     margin-top: 35px;
     box-shadow: 4px 4px 4px #858585, 4px 4px 4px #858585;
     border-radius: 10px;
-    margin-bottom: 20px; 
+    margin-bottom: 20px;
     margin-left: 5rem;
     margin-right: 5rem;
 
@@ -392,11 +404,12 @@ header {
     border-radius: 10px;
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 830px) {
 
     .img-projetos img {
         width: 300px;
         height: auto;
+
 
     }
 
@@ -405,7 +418,7 @@ header {
         height: auto;
         margin-left: -28px;
         margin-top: 50px;
-
+        margin-left: 2rem;
     }
 }
 
@@ -413,7 +426,7 @@ header {
 @media only screen and (max-width: 719px) {
     .C-projetos {
         padding-top: 2%;
-        
+
     }
 
     .C-projetos h1 {
@@ -427,17 +440,18 @@ header {
         margin-bottom: 1rem;
         padding-left: 1rem;
     }
-    .img-2{
-        flex-direction: column; 
-        align-items: center; 
+
+    .img-2 {
+        flex-direction: column;
+        align-items: center;
         flex-wrap: wrap;
     }
 
     .img-projetos {
         gap: 20px;
         margin-top: 80px;
-        flex-direction: column; 
-        align-items: center; 
+        flex-direction: column;
+        align-items: center;
         flex-wrap: wrap;
     }
 
@@ -473,10 +487,10 @@ header {
     font-family: "Inria Sans";
     font-weight: lighter;
     margin-bottom: 20px;
-    
+
 }
 
-.link-footer{
+.link-footer {
     width: 35px;
     height: 35px;
     cursor: pointer;
