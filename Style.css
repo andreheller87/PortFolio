@@ -409,6 +409,48 @@ header {
     }
 }
 
+
+@media only screen and (max-width: 414px) {
+    .C-projetos {
+        padding-top: 2%;
+    }
+
+    .C-projetos h1 {
+        font-size: 30px;
+        padding-top: 40px;
+    }
+
+    .projectOrder h2,
+    .projectOrder p {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        padding-left: 1rem;
+    }
+
+    .img-projetos {
+        gap: 20px;
+        margin-top: 80px;
+        flex-direction: column; 
+        align-items: center; 
+        flex-wrap: wrap;
+    }
+
+    .img-projetos img {
+        width: 100%;
+        margin-left: 0;
+        margin-bottom: 20px;
+    }
+
+    .img-2 img {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 20px;
+        margin-right: 0;
+    }
+}
+
+
+
 /*===============Rodapé================*/
 
 .C-rodapé {
