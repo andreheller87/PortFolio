@@ -340,7 +340,7 @@ nav ul li a:hover {
 }
 .projectOrder p{
  font-family: "Inria Sans";
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
     color: #ffff;
     padding-left: 2rem;
@@ -353,7 +353,7 @@ nav ul li a:hover {
     font-weight: bold;
     font-family: "Inria Sans";
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 2rem;
     color: #ac77cd;
 
@@ -375,8 +375,8 @@ nav ul li a:hover {
     display: flex;
     border: 2px solid #ffff;
     border-radius: 10px;
-    margin: 2rem;
-    padding: 1.5rem;
+    margin: 1rem;
+    padding: 1rem;
 }
 
 .img-projetos img {
@@ -398,7 +398,7 @@ nav ul li a:hover {
     margin-bottom: 20px;
     margin-left: 5rem;
     margin-right: 5rem;
-    margin-top: 6rem;
+    margin-top: 4rem;
 
 }
 
