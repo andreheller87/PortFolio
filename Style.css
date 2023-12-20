@@ -418,6 +418,19 @@ nav ul li a:hover {
 
 }
 
+.img-2 video {
+    width: 30rem;
+    height: auto;
+    margin-top: 35px;
+    box-shadow: 4px 4px 4px #858585, 4px 4px 4px #858585;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-top: 4rem;
+
+}
+
 .C-projetos img:hover {
     transform: scale(1.1);
     transition: 0.5s;
