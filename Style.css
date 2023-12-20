@@ -58,9 +58,9 @@ nav ul li a {
 
 nav ul li a:hover {
     font-weight: bolder;
-   color: rgb(19, 23, 130);
+    color: rgb(19, 23, 130);
     border-bottom: 2px white groove;
-  
+
 }
 
 
@@ -79,33 +79,34 @@ nav ul li a:hover {
     align-items: center;
     text-align: center;
     background: #000;
-    
+
 }
 
 .Section-1-bg img {
-   width: 30%;
+    width: 30%;
     max-width: 100%;
     border-radius: 20px;
-   padding: auto;
-  
-   
+    padding: auto;
+
+
 }
-.main-title{
+
+.main-title {
     max-width: 80%;
     margin: 0 auto;
     text-align: left;
-   
+
 }
 
 
 
 .main-title h1 {
-    
+
     text-align: center;
-     font-size: 2rem;
-     color: rgb(19, 23, 130);
-     font-family: "Poppins";
-     font-weight: bold;
+    font-size: 2rem;
+    color: rgb(19, 23, 130);
+    font-family: "Poppins";
+    font-weight: bold;
 
 }
 
@@ -122,7 +123,7 @@ nav ul li a:hover {
 
 .main-title h5 {
     padding-left: 5rem;
-    
+
     color: #fff;
     font-size: 0.8rem;
     font-family: "Hanuman";
@@ -135,7 +136,7 @@ nav ul li a:hover {
     .Section-1-bg {
         display: flex;
         flex-direction: row-reverse;
-      
+
     }
 }
 
@@ -351,16 +352,18 @@ nav ul li a:hover {
 .projectOrder {
     width: 100%;
 }
-.projectOrder a{
+
+.projectOrder a {
     text-decoration: none;
 }
-.projectOrder p{
- font-family: "Inria Sans";
+
+.projectOrder p {
+    font-family: "Inria Sans";
     margin-top: 1rem;
     margin-bottom: 2rem;
     color: #ffff;
     padding-left: 2rem;
-    
+
 
 }
 
@@ -402,7 +405,7 @@ nav ul li a:hover {
     border-radius: 10px;
     margin-bottom: 20px;
     margin-left: -225px;
-    
+
 }
 
 .img-2 img {
