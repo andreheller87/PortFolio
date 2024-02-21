@@ -453,7 +453,7 @@ nav ul li a:hover {
 
     }
 
-    .img-2 img {
+    .img-2 img,video {
         width: 300px;
         height: auto;
         margin-left: -28px;
@@ -466,7 +466,6 @@ nav ul li a:hover {
 @media only screen and (max-width: 719px) {
     .C-projetos {
         padding-top: 2%;
-
     }
 
     .C-projetos h1 {
@@ -474,11 +473,11 @@ nav ul li a:hover {
         padding-top: 40px;
     }
 
-    .projectOrder h2,
-    .projectOrder p {
+    .projectOrder {
         margin-top: 1rem;
         margin-bottom: 1rem;
         padding-left: 1rem;
+        text-align: center; /* Center the text */
     }
 
     .img-2 {
@@ -501,14 +500,14 @@ nav ul li a:hover {
         margin-bottom: 20px;
     }
 
-    .img-2 img {
+    .img-2 img, .img-2 video {
         width: 100%;
         margin-left: 0;
         margin-top: 20px;
         margin-right: 0;
     }
+    
 }
-
 
 
 /*===============Rodapé================*/
