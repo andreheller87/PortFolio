@@ -1,237 +1,307 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio profissional de André Heller — Desenvolvedor de Sistemas.">
+    <meta name="theme-color" content="#0c0e13">
+    <title>André Heller | Desenvolvedor de Sistemas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="Style.css">
-    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-
-    <title>Portfolio.</title>
 </head>
 <body>
-<header>
-    <div>André Heller.</div>
-    <nav>
-        <ul>
-            <li><a href="#home">Home.</a></li>
-            <li><a href="#HardSkill">Hard Skills.</a></li>
-            <li><a href="#gitlink">Projetos.</a></li>
-            <li><a class="curriculo" href="Curriculo.pdf" target="_blank">Currículo.</a></li>
-        </ul>
-    </nav>
-</header>
+    <div class="scroll-progress" id="scrollProgress"></div>
 
+    <header class="site-header" id="top">
+        <a class="brand" href="#home" aria-label="Página inicial">
+            <span class="brand-mark">AH</span>
+            <span>André Heller<span class="brand-dot">.</span></span>
+        </a>
 
-    <section id="home" class="Section-1-bg">
-        <img src="./image/andreLaptop.jpg" alt="">
-        <section class="main-title">
-            
-            <h1>André Heller.</h1>
-            <h2>Desenvolvedor. </h2>
-            <h5>
-               
-                
-            </h5>   
-            <h5>Conhecimento em: <strong>Java, JavaScript, SQL, Python, </strong></h5>
-            <h5> HTML, CSS, SpringBoot, JQuery, Angular, React.</h5>
-           <h5>&bull; FURB &ndash; Ciência Da Computação &ndash; 4º Semestre.</h5>
-           <h5>&bull; Blusoft &ndash; Entra21 2023 &ndash; Java(presencial).</h5>
-            
-        </section><!--main-title-->
-    </section><!--Section-1-bg-->
-
-    <section id="HardSkill" class="Container" data-aos="fade-up">
-        <h1>Hard Skills.</h1>
-
-        <section class="C-card" data-aos="fade-up">
-            <section class="Card">
-                <img src="./image/java.png" alt="phone">
-                <h3>Desenvolvimento Java</h3>
-                <ul>
-                    <li>Java POO</li>
-                    <li>Estrutura de dados Java</li>
-                </ul>
-
-            </section><!--Card-->
-
-            <section class="Card">
-                <img src="./image/web.png" alt="web">
-                <h3>Desenvolvimento Web</h3>
-                <ul>
-                    <li>React</li>
-                    <li>HTML5</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                </ul>
-
-            </section><!--Card-->
-
-            <section class="Card">
-                <img src="./image/banco.png" alt="grafico">
-                <h3>Banco de Dados</h3>
-                <ul>
-                    <li>SQL - MariaDB</li>
-                    <li>Mysql</li>
-                </ul>
-
-            </section><!--Card-->
-        </section><!--C-card-->
-
-    </section><!--C-card-2-->
-    </section><!--conatiner-->
-
-
-    <section id="gitlink" class="C-projetos" data-aos="fade-up">
-        <h1>Projetos.</h1>
-
-        <nav class="img-2" data-aos="fade-up">
-
-
-            <a href="https://github.com/andreheller87" target="_blank"> <img src="./image/printgit.png"
-                    alt="projeto"></a>
-
-            <div class="projectOrder">
-                <a href="https://github.com/andreheller87" target="_blank">
-                    <h2>Github.</h2>
-                    <p>Olá! Estou empolgado em compartilhar alguns dos meus projetos do GitHub. Tenho conhecimento em
-                        desenvolvimento de software, com foco em Java, JavaScript, HTML, CSS e um pouco de Python. No
-                        GitHub, você encontrará projetos que destacam minha habilidade em diferentes áreas, incluindo o
-                        uso de frameworks como React e Spring Boot para criar aplicativos web dinâmicos. Convido você a
-                        explorar meus projetos para ver detalhes técnicos, amostras de código e documentação, refletindo
-                        minha dedicação e habilidades como desenvolvedor.
-                    </p>
-                </a>
-            </div>
+        <nav class="desktop-nav" aria-label="Navegação principal">
+            <a href="#sobre">Sobre</a>
+            <a href="#skills">Skills</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#experiencia">Jornada</a>
+            <a href="#contato">Contato</a>
         </nav>
 
-        <!---->
-        <nav class="img-2">
-            <div class="projectOrder">
-                <a href="https://stocksafe2023.netlify.app/" target="_blank">
-                    <h2>Site Stock Safe.</h2>
-                    <p>Este projeto envolve a criação de um site fictício para a empresa "Stock Safe" como parte do
-                        curso "Entra21". A "Stock Safe" é uma empresa fictícia especializada em soluções inovadoras de estoque 
-                        para pequenas empresas. O site foi desenvolvido com o objetivo de simular a presença online de uma
-                        empresa real, proporcionando uma experiência prática de desenvolvimento web.
-                    </p>
-                </a>
+        <div class="header-actions">
+            <button class="icon-btn" id="themeToggle" type="button" aria-label="Alternar tema" title="Alternar tema">
+                <span id="themeIcon">☾</span>
+            </button>
+            <a class="cv-btn" href="Curriculo.pdf" target="_blank" rel="noopener">Currículo <span>↗</span></a>
+            <button class="menu-btn" id="menuToggle" type="button" aria-label="Abrir menu">☰</button>
+        </div>
+    </header>
+
+    <div class="mobile-menu" id="mobileMenu">
+        <a href="#sobre">Sobre</a>
+        <a href="#skills">Skills</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#experiencia">Jornada</a>
+        <a href="#contato">Contato</a>
+    </div>
+
+    <main>
+        <section class="hero section" id="home">
+            <div class="hero-bg"></div>
+            <div class="hero-copy reveal">
+                <div class="availability"><span></span> Disponível para novos projetos</div>
+                <p class="eyebrow">DESENVOLVEDOR DE SISTEMAS</p>
+                <h1>Transformar ideias em soluções.</h1>
+                <p class="hero-text">
+                    Atuo principalmente no desenvolvimento Backend, trabalhando com Java, Spring Boot, APIs REST e bancos de dados, além de conhecimentos práticos em desenvolvimento Web para construir soluções completas e integradas.
+                </p>
+                <div class="hero-actions">
+                    <a class="primary-btn" href="#projetos">Ver projetos <span>↓</span></a>
+                    <a class="secondary-btn" href="#contato">Vamos conversar <span>↗</span></a>
+                </div>
+                <div class="hero-meta">
+                    <div class="tech-item">
+                        <div class="tech-icon java-icon">☕</div>
+                        <span><b>Java</b><small>Spring Boot</small></span>
+                    </div>
+
+                    <div class="tech-item">
+                        <div class="tech-icon js-icon">JS</div>
+                        <span><b>JavaScript</b><small>Web</small></span>
+                    </div>
+
+                    <div class="tech-item">
+                        <div class="tech-icon sql-icon">DB</div>
+                        <span><b>SQL</b><small>APIs REST</small></span>
+                    </div>
+                </div>
             </div>
-            <a href="https://stocksafe2023.netlify.app/" target="_blank"><img src="./image/SiteInfinity.png"
-                    alt="projeto"></a>
-        </nav>
 
+            <div class="hero-visual reveal">
+                <div class="visual-grid"></div>
+                <div class="code-card">
+                    <div class="code-top"><span></span><span></span><span></span><small>developer.java</small></div>
+                    <pre><code><span class="c-key">public</span> <span class="c-type">class</span> <span class="c-name">Developer</span> {
+        <span class="c-key">private</span> String focus = <span class="c-string">"soluções"</span>;
+        <span class="c-key">private</span> String stack = <span class="c-string">"Java + Web"</span>;
 
-        <!---->
+        <span class="c-key">public</span> <span class="c-type">void</span> build() {
+            <span class="c-name">learn</span>();
+            <span class="c-name">create</span>();
+            <span class="c-name">evolve</span>();
+        }
+}</code></pre>
+                </div>
+                <div class="portrait-frame">
+                    <img src="image/andreLaptop.jpg" alt="André Heller trabalhando no computador">
+                </div>
+                <div class="floating-badge badge-work">
+                    <strong>1,5</strong>
+                    <span>anos trabalhando como<br>desenvolvedor</span>
+                </div>
 
-        <nav class="img-2" data-aos="fade-up">
-            <video id="meuVideo" controls>
-                <source src="./image/StockSafe.mp4" type="video/mp4">
-                Seu navegador não suporta o elemento de vídeo.
-            </video>
-        
-            <div class="projectOrder">
-                <a  id="playPauseBtn">
-                    <h2>Sistema Stock Safe.</h2>
-                    <p>Estou atualmente envolvido no desenvolvimento de um Sistema de Estoque utilizando Java, que servirá como meu Trabalho de Conclusão de Curso (TCC) no programa Entra21. Este projeto está centrado na "Stock Safe", uma empresa fictícia especializada em oferecer soluções inovadoras de gestão de estoque para pequenas empresas. Ao seu término, o sistema contará com recursos avançados, como rastreamento em tempo real, alertas de níveis baixos de estoque, gerenciamento de prazos de validade, histórico detalhado de movimentação de estoque e relatórios personalizados.</p>
-                </a>
+                <div class="floating-badge badge-one">
+                    <strong>4+</strong>
+                    <span>anos estudando<br>tecnologia</span>
+                </div>
+                <div class="floating-badge badge-two"><span class="pulse"></span><strong>BUILD</strong><span>• CREATE • EVOLVE</span></div>
             </div>
-        
-            <script>
-                var video = document.getElementById('meuVideo');
-                var playPauseBtn = document.getElementById('playPauseBtn');
-        
-                playPauseBtn.addEventListener('click', function () {
-                    if (video.paused) {
-                        video.play();
-                    } else {
-                        video.pause();
-                    }
-                });
-        
-                video.addEventListener('ended', function () {
-                    video.pause();
-                });
-            </script>
-        </nav>
-        
-        
-        <!---->
-        
+        </section>
 
-        <nav class="img-2">
-            <div class="projectOrder">
-                <a href="https://calculator-andreheller.netlify.app/" target="_blank">
-                    <h2>Calculadora.</h2>
-                    <p>Neste projeto, criei uma calculadora web usando HTML, CSS e JavaScript. A calculadora é capaz de
-                        realizar operações básicas como adição, subtração, multiplicação e divisão.Foi uma ótima
-                        oportunidade para aplicar conceitos de manipulação do DOM (Document Object Model) usando
-                        JavaScript, além de praticar habilidades de design e estilização com CSS. Se você quiser
-                        experimentar a calculadora, sinta-se à vontade para acessar o site.
-                    </p>
-                </a>
+        <section class="section intro-section" id="sobre">
+            <div class="section-heading reveal">
+                <p class="eyebrow">01 / SOBRE</p>
+                <h2>Desenvolvedor com<br>curiosidade de engenheiro.</h2>
             </div>
-            <a href="https://calculator-andreheller.netlify.app/" target="_blank"><img src="./image/calc.png"
-                    alt="projeto"></a>
-        </nav>
-        <!---->
-
-
-        <nav class="img-2" data-aos="fade-up">
-
-            <video id="meuVideo" controls>
-                <source src="./image/XadrezMusic.mp4" type="video/mp4">
-                Seu navegador não suporta o elemento de vídeo.
-            </video>
-
-            <div class="projectOrder">
-               
-                    <h2>Xadrez.</h2>
-                    <p>
-                        Projeto de Jogo de Xadrez em Java <br>
-
-                        Descrição:
-                         Durante o meu curso de Java da Udemy, tive a oportunidade de mergulhar no mundo da programação orientada a objetos e
-                         aplicar meus conhecimentos em um projeto prático emocionante: um jogo de xadrez implementado em Java.
-                         Este projeto foi uma experiência incrível que me permitiu consolidar os conceitos aprendidos no curso e explorar
-                         novas técnicas de programação. <br>
-                        Implementação completa das regras do xadrez, incluindo movimentos válidos das peças, captura, xeque, xeque-mate. <br>
-                        Interface de usuário simples e intuitiva, permitindo que os jogadores interajam facilmente com o jogo através do Git Bash. <br><br>
-                       <a href="https://github.com/andreheller87/CursosUdemy/tree/main/UdemyJava/src/chessSystem" target="_blank">Código no GitHub </a>
-                    </p>
-               
+            <div class="intro-content reveal">
+                <p class="lead">
+                    Sou André Heller, desenvolvedor de sistemas apaixonado por tecnologia,
+                    aprendizado contínuo e construção de produtos digitais.
+                </p>
+                <p>
+                    Minha base passa por Java, Spring Boot, JavaScript,
+                    HTML, CSS, SQL e desenvolvimento de APIs REST. Gosto de entender o problema
+                    antes de escrever o código e transformar requisitos em sistemas organizados,
+                    responsivos e fáceis de evoluir.
+                </p>
+                <div class="stats">
+                    <div><strong>Java</strong><span>Backend</span></div>
+                    <div><strong>Web</strong><span>Frontend responsivo</span></div>
+                    <div><strong>SQL</strong><span>Dados & persistência</span></div>
+                    <div><strong>API</strong><span>REST & integração</span></div>
+                </div>
             </div>
-        </nav>
+        </section>
 
-        <!---->
+        <section class="section skills-section" id="skills">
+            <div class="section-heading reveal">
+                <p class="eyebrow">02 / STACK</p>
+                <h2>Ferramentas para<br>tirar projetos do papel.</h2>
+            </div>
+            <div class="skills-grid">
+                <article class="skill-card reveal">
+                    <div class="skill-icon">01</div>
+                    <h3>Backend</h3>
+                    <p>Construção de aplicações e APIs robustas com foco em organização e regras de negócio.</p>
+                    <div class="tags"><span>Java</span><span>Spring Boot</span><span>REST</span><span>JPA</span></div>
+                </article>
+                <article class="skill-card reveal">
+                    <div class="skill-icon">02</div>
+                    <h3>Frontend</h3>
+                    <p>Interfaces responsivas, acessíveis e com atenção à experiência de quem utiliza o sistema.</p>
+                    <div class="tags"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>React</span></div>
+                </article>
+                <article class="skill-card reveal">
+                    <div class="skill-icon">03</div>
+                    <h3>Dados</h3>
+                    <p>Modelagem, consultas e integração com bancos relacionais para aplicações completas.</p>
+                    <div class="tags"><span>MySQL</span><span>MariaDB</span><span>SQL</span><span>PostgreSQL</span></div>
+                </article>
+                <article class="skill-card reveal">
+                    <div class="skill-icon">04</div>
+                    <h3>Ferramentas</h3>
+                    <p>Versionamento, desenvolvimento e documentação para manter o projeto sustentável.</p>
+                    <div class="tags"><span>Git</span><span>GitHub</span><span>Maven</span><span>Swagger</span></div>
+                </article>
+            </div>
+        </section>
 
-    </section>
+        <section class="section projects-section" id="projetos">
+            <div class="projects-head reveal">
+                <div class="section-heading">
+                    <p class="eyebrow">03 / PROJETOS</p>
+                    <h2>Alguns trabalhos que<br>representam minha evolução.</h2>
+                </div>
+                <a class="text-link" href="https://github.com/andreheller87" target="_blank" rel="noopener">GitHub completo ↗</a>
+            </div>
 
-    <section class="C-rodapé">
+            <div class="projects-grid">
+                <article class="project-card project-featured reveal">
+                    <div class="project-image"><img src="image/SiteInfinity.png" alt="Tela do projeto Stock Safe"></div>
+                    <div class="project-info">
+                        <div class="project-number">01</div>
+                        <div>
+                            <p class="project-type">WEB / ENTRA21</p>
+                            <h3>Stock Safe Site</h3>
+                            <p>Solução fictícia para gestão de estoque, criada para praticar desenvolvimento web e construção de uma experiência digital para uma empresa.</p>
+                            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                            <a class="project-link" href="https://stocksafe2023.netlify.app/" target="_blank" rel="noopener">Ver projeto ↗</a>
+                        </div>
+                    </div>
+                </article>
 
-        <form>
-            <p>Entre em contato:</p>
-            <img onclick="whats()" class="link-footer" src="icons8-whatsapp-480.png" alt="Whats">
-            <a href="https://github.com/andreheller87" target="_blank"> <img class="link-footer" src="github.png"
-                    alt="projeto"></a>
+                <article class="project-card reveal">
+                    <div class="project-image"><img src="image/SiteWeBTCCSenac.jpeg" alt="Calculadora web"></div>
+                    <div class="project-info">
+                        <div class="project-number">02</div>
+                        <div>
+                            <p class="project-type">FRONTEND</p>
+                            <h3>TCC senac API + Web</h3>
+                            <p>Projeto focado em JavaScript, manipulação do DOM e construção de uma interface simples e funcional.</p>
+                            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+                            <div class="tags"><span>API</span><span>JAVA</span><span>Spring Boot</span></div>
+                            <a class="project-link" href="https://github.com/andreheller87/Senac-TDS-UC15-Projeto-Web/tree/main/escolainfoWEB" target="_blank" rel="noopener">Ver projeto ↗</a>
+                        </div>
+                    </div>
+                </article>
 
-            <a href="https://www.linkedin.com/in/andr%C3%A9-heller-1172a4235/" target="_blank"><img class="link-footer"
-                    src="linkedin.png" alt="projeto"></a>
+                <article class="project-card reveal">
+                    <div class="project-image video-cover"><video controls muted  preload="metadata"><source src="image/StockSafe.mp4" type="video/mp4"></video></div>
+                    <div class="project-info">
+                        <div class="project-number">03</div>
+                        <div>
+                            <p class="project-type">JAVA / SISTEMA</p>
+                            <h3>Stock Safe System</h3>
+                            <p>Sistema de estoque desenvolvido para aplicar Java, POO e regras de negócio em um projeto de maior porte.</p>
+                            <div class="tags"><span>Java</span><span>POO</span><span>Estoque</span></div>
+                            <a class="project-link" href="https://github.com/andreheller87" target="_blank" rel="noopener">Explorar no GitHub ↗</a>
+                        </div>
+                    </div>
+                </article>
 
+                <article class="project-card reveal">
+                    <div class="project-image video-cover"><video controls muted  preload="metadata"><source src="image/XadrezMusic.mp4" type="video/mp4"></video></div>
+                    <div class="project-info">
+                        <div class="project-number">04</div>
+                        <div>
+                            <p class="project-type">JAVA / POO</p>
+                            <h3>Jogo de Xadrez</h3>
+                            <p>Implementação das regras do xadrez para consolidar conceitos de orientação a objetos e organização de código.</p>
+                            <div class="tags"><span>Java</span><span>POO</span><span>Git</span></div>
+                            <a class="project-link" href="https://github.com/andreheller87/CursosUdemy/tree/main/UdemyJava/src/chessSystem" target="_blank" rel="noopener">Ver código ↗</a>
+                        </div>
+                    </div>
+                </article>
 
-        </form>
+                <article class="project-card github-card reveal">
+                    <div class="github-art"><span>&lt;/&gt;</span></div>
+                    <div class="project-info">
+                        <div class="project-number">05</div>
+                        <div>
+                            <p class="project-type">OPEN SOURCE / GITHUB</p>
+                            <h3>Mais projetos</h3>
+                            <p>Veja outros estudos, experimentos e projetos de desenvolvimento no meu GitHub.</p>
+                            <a class="project-link" href="https://github.com/andreheller87" target="_blank" rel="noopener">Acessar GitHub ↗</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </section>
 
-    </section><!--C-rodapé-->
+        <section class="section journey-section" id="experiencia">
+            <div class="section-heading reveal">
+                <p class="eyebrow">04 / JORNADA</p>
+                <h2>Aprender. Construir.<br><span>Continuar evoluindo.</span></h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal">
+                    <span class="timeline-dot"></span>
+                    <div class="timeline-year">2023</div>
+                    <div><h3>Entra21 — Java</h3><p>Formação presencial em desenvolvimento Java, orientação a objetos e construção de projetos.</p></div>
+                </div>
+                <div class="timeline-item reveal">
+                    <span class="timeline-dot"></span>
+                    <div class="timeline-year">ATUAL</div>
+                    <div><h3>Desenvolvimento de Sistemas - Senac</h3><p>Formação técnica com foco em desenvolvimento web, banco de dados, APIs, engenharia de software e projetos.</p></div>
+                </div>
+                <div class="timeline-item reveal">
+                    <span class="timeline-dot"></span>
+                    <div class="timeline-year">ATUAL</div>
+                    <div><h3>Ciência da Computação - Furb</h3><p>Bacharelado em Ciência da Computação</p></div>
+                </div>
+                <div class="timeline-item reveal">
+                    <span class="timeline-dot"></span>
+                    <div class="timeline-year">NEXT</div>
+                    <div><h3>Novos desafios</h3><p>Expandindo conhecimentos em backend, arquitetura, cloud e desenvolvimento de aplicações cada vez mais completas.</p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-section" id="contato">
+            <div class="contact-glow"></div>
+            <div class="contact-inner reveal">
+                <p class="eyebrow">05 / CONTATO</p>
+                <h2>Tem uma ideia?<br><span>Vamos construir juntos.</span></h2>
+                <p>Estou aberto a oportunidades, projetos e conexões na área de tecnologia.</p>
+                <div class="contact-actions">
+                    <a class="primary-btn" href="mailto:andreheller87@gmail.com">Enviar e-mail ↗</a>
+                    <a class="secondary-btn" href="https://wa.me/5547992847590?text=Ol%C3%A1%2C%20vim%20pelo%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." target="_blank" rel="noopener">WhatsApp ↗</a>
+                </div>
+                <div class="socials">
+                    <a href="https://github.com/andreheller87" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://www.linkedin.com/in/andreheller87/" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="Curriculo.pdf" target="_blank" rel="noopener">Currículo</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <span>© <span id="year"></span> André Heller.</span>
+        <span>Desenvolvido com código, curiosidade e café.</span>
+        <a href="#top">Voltar ao topo ↑</a>
+    </footer>
 
     <script src="script.js"></script>
-    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
-
 </body>
-
 </html>

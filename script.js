@@ -1,31 +1,49 @@
- function abrirmenu() {
-    let BarraMenuAberto = document.getElementById('barra-menu');
+const root = document.documentElement;
+const themeToggle = document.getElementById("themeToggle");
+const themeIcon = document.getElementById("themeIcon");
+const menuToggle = document.getElementById("menuToggle");
+const mobileMenu = document.getElementById("mobileMenu");
+const progress = document.getElementById("scrollProgress");
 
-    if (BarraMenuAberto.style.width == "0px") {
-        BarraMenuAberto.style.width = "180px";
-    } else {
-        BarraMenuAberto.style.width = "0px";
-    }
+function setTheme(theme) {
+    root.setAttribute("data-theme", theme);
+    localStorage.setItem("portfolio-theme", theme);
+    themeIcon.textContent = theme === "dark" ? "☾" : "☀";
+    themeToggle.setAttribute("aria-label", theme === "dark" ? "Ativar tema claro" : "Ativar tema escuro");
 }
 
-function exibirCurriculo() {
-    window.open('https://github.com/andreheller87/PortFolio/blob/main/Curriculo.pdf', '_blank');
- 
-}
+const savedTheme = localStorage.getItem("portfolio-theme");
+setTheme(savedTheme || (window.matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark"));
 
-function exibirHardSkills() {
-    var elementoHardSkills = document.getElementById("HardSkill");
-    elementoHardSkills.scrollIntoView({ behavior: 'smooth' });
-}
+themeToggle.addEventListener("click", () => {
+    setTheme(root.getAttribute("data-theme") === "dark" ? "light" : "dark");
+});
 
-function exibirGitLink() {
-    var elementoHardSkills = document.getElementById("gitlink");
-    elementoHardSkills.scrollIntoView({ behavior: 'smooth' });
-}
+menuToggle.addEventListener("click", () => {
+    mobileMenu.classList.toggle("open");
+    menuToggle.textContent = mobileMenu.classList.contains("open") ? "×" : "☰";
+});
 
-function whats() {
-    var url = "https://whatsa.me/5547992847590/?t=Ol%C3%A1,%20vim%20pelo%20seu%20portf%C3%B3lio,%20gostaria%20de%20me%20conectar!";
-    window.open(url, "_blank");
-}
+document.querySelectorAll(".mobile-menu a").forEach(link => {
+    link.addEventListener("click", () => {
+        mobileMenu.classList.remove("open");
+        menuToggle.textContent = "☰";
+    });
+});
 
+window.addEventListener("scroll", () => {
+    const height = document.documentElement.scrollHeight - window.innerHeight;
+    progress.style.width = `${(window.scrollY / height) * 100}%`;
+}, { passive: true });
 
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.12 });
+
+document.querySelectorAll(".reveal").forEach(el => observer.observe(el));
+document.getElementById("year").textContent = new Date().getFullYear();
